@@ -1,137 +1,41 @@
-# 🚀 DECENTRASEC Uploader with Pinata
-## Securely upload, store, and verify research papers using blockchain technology.
+DECENTRASEC: Secure & Transparent Research Paper Registry on Blockchain
+ The Future of Academic Integrity, Decentralization, and AI-Powered Research Validation is Here! 
+
+⚡ The Problem: A Broken Research System
+🔴 Plagiarism & Fake Research – Countless fraudulent research papers make it into academia due to weak validation.
+🔴 Centralized Gatekeepers – Publishing houses & centralized repositories control the research ecosystem.
+🔴 Manipulated Peer Reviews – Unverified citations & biased reviews lead to untrustworthy scientific advancements.
+🔴 Data Tampering & Ownership Disputes – Who really owns a research paper? Traditional publishing lacks immutable proof.
+
+🔥 Our Solution: AI-Driven Blockchain Research Validation
+🌍 DecentraSec is an immutable, decentralized research registry that integrates blockchain security with AI-powered validation to ensure research integrity, transparency, and proof-of-authorship.
+🚀 How It Works? 1️⃣ Smart Contract-Based Paper Uploading – Every research paper is permanently stored on Anryton Blockchain via smart contracts, ensuring unalterable ownership records.
+2️⃣ IPFS-Backed Storage – Papers are uploaded to InterPlanetary File System (IPFS), providing decentralized, tamper-proof accessibility.
+3️⃣ AI-Powered Paper Validation – Every submission undergoes AI-based research quality analysis for plagiarism detection, originality scoring, and authenticity verification.
+4️⃣ On-Chain Verification & Tokenized Rewards – Verified researchers receive blockchain-stamped validation proofs, and institutions can reward credible research via Web3 incentives.
+5️⃣ Decentralized Peer Review – Our model enables permissionless, blockchain-verified peer reviews, ensuring trust in research without central authority control.
 
 
-## 🛠 Features
-✅ Upload PDFs directly to Pinata  
-✅ View uploaded files with CIDs and timestamps  
-✅ Copy CID to clipboard  
-✅ Search & filter uploaded files  
-✅ Public/Private file tabs (UI only)  
 
----
+💡 Key Features & Innovations
+✅ Immutable Research Paper Registry – Every uploaded paper is forever stored on the blockchain, preventing fraud & plagiarism.
+✅ AI-Powered Validation Engine – Ensures real-time plagiarism detection, citation authenticity, and originality scoring.
+✅ Web3 Decentralized Research Publishing – No centralized control; researchers own their work via smart contracts.
+✅ Smart Contract-Based Verification – Every research paper undergoes blockchain-stamped AI authentication.
+✅ Cross-Institutional Access – Universities, think tanks, and scholars can seamlessly access verified research without intermediaries.
+✅ Secure & Transparent Citations – Future research citations are timestamped and linked to verified sources on-chain.
+✅ Tokenized Reputation System – Researchers earn reputation scores & digital credentials (NFTs) for verified contributions.
 
-## 📂 **Project Setup (Windows Users)**
-Follow these steps to install and run the project **on Windows**.
+🛠️ Tech Stack
+🔹 Blockchain → Solidity, Foundry, Anryton Smart Contracts
+🔹 AI Verification → GPT-4, AI-powered plagiarism detection & academic validation models
+🔹 Storage → IPFS for decentralized document hosting
+🔹 Frontend → Next.js, Tailwind CSS
+🔹 Wallet Integration → MetaMask & Web3.js
 
-### **1️⃣ Install Required Dependencies**
-Ensure you have the following installed:
-
-- **Node.js & npm** – [Download Here](https://nodejs.org/)
-- **Git** – [Download Here](https://git-scm.com/)
-- **Foundry (Solidity Compiler & Tools)**
-
-### **2️⃣ Install Foundry (Windows)**
-Open **PowerShell** as **Administrator** and run:
-
-```powershell
-iwr -useb https://foundry.paradigm.xyz | iex
-```
-
-Then restart PowerShell and update Foundry:
-```powershell
-foundryup
-```
-
-Verify installation:
-```powershell
-forge --version
-```
-
----
-
-## 🚀 **Getting Started**
-### **1️⃣ Clone the Repository**
-```sh
-git clone [https://github.com/PanaverseDevTeam/DECENTRASEC](https://github.com/PanaverseDevTeam/DECENTRASEC)
-cd decentrasec
-```
-
-### **2️⃣ Install Project Dependencies**
-```sh
-npm install
-```
-
-### **3️⃣ Set Up Environment Variables**
-Create a **`.env`** file in the root directory and add:
-
-```env
-PINATA_JWT=your_pinata_jwt_here
-```
-
-Replace `your_pinata_jwt_here` with your **Pinata JWT**.
-
----
-
-## 📡 **Deploy Smart Contracts (Optional)**
-To deploy contracts to the **Polygon Mumbai Testnet**, set up **Infura** and **your private key**.
-
-### **1️⃣ Set Up Environment Variables for Deployment**
-Add the following to your `.env` file:
-
-```env
-POLYGON_RPC_URL=https://polygon-mumbai.infura.io/v3/YOUR_INFURA_PROJECT_ID
-PRIVATE_KEY=your_wallet_private_key
-```
-
-### **2️⃣ Deploy Contract**
-```sh
-forge create contracts/YourContract.sol:YourContract --rpc-url $POLYGON_RPC_URL --private-key $PRIVATE_KEY --broadcast
-```
-
----
-
-## 🎮 **Running the Application**
-Start the development server:
-```sh
-npm run dev
-```
-
-Then open **[http://localhost:3000](http://localhost:3000)** in your browser.
-
----
-
-## 🎯 **Usage Guide**
-1️⃣ Click **"Upload PDF"** and select a file  
-2️⃣ Wait for the file to be uploaded to **Pinata**  
-3️⃣ View your file’s **CID (IPFS Hash)** in the table  
-4️⃣ Click the **copy icon** to copy the CID  
-5️⃣ Open your file via `https://gateway.pinata.cloud/ipfs/CID`  
-
----
-
-## 🔥 **Troubleshooting (Windows Users)**
-### ❌ **"Command Not Found" Errors**
-- If `foundryup` is not recognized, run:
-  ```powershell
-  $env:PATH += ";$HOME\.foundry\bin"
-  ```
-
-### ❌ **Environment Variables Not Working**
-- Restart your terminal after adding **.env** variables.
-
-### ❌ **Deployment Issues**
-- Ensure your **Infura API Key** is correct.
-- Use a **test wallet** (Do not expose your real private key).
-
----
-
-## 📜 **License**
-This project is open-source under the **MIT License**.
-
----
-
-## 🤝 **Contributing**
-Want to improve the project? Contributions are welcome! 🚀  
-1️⃣ **Fork the repo**  
-2️⃣ **Create a new branch**  
-3️⃣ **Make your changes**  
-4️⃣ **Submit a Pull Request**  
-
----
-
-## 📩 **Contact**
-For any issues, feel free to reach out:  
-📧 **Email:** your@email.com  
-🌐 **Website:** [yourwebsite.com](https://yourwebsite.com)  
-
+🌍 Why It Matters?
+🚀 DecentraSec is more than just a research repository—it’s the future of decentralized, AI-validated knowledge-sharing!
+🔹 Protects Researcher Rights – No more stolen research, ownership disputes, or gatekeeping!
+🔹 Eliminates Plagiarism & Fake Research – AI + Blockchain ensures zero manipulation & full transparency.
+🔹 Promotes Open Access & Decentralization – Say goodbye to paywalled academic journals!
+🔹 Incentivizes Verified Research – Smart contracts enable Web3-based funding & credibility scoring!
